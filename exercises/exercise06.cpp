@@ -5,15 +5,13 @@
 using std::cout;
 using std::endl;
 
-void
-printNumber(const unsigned int y);
+int main() {
 
-int
-main() {
-
-  unsigned int x = 10;
-
-  printNumber(x);
+  sayHello();
 
   return 0;
+}
+
+void sayHello() {
+  cout << "hello" << endl;
 }

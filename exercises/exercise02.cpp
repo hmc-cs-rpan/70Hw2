@@ -1,7 +1,6 @@
 // -*- C++ -*-
 
-int
-main() {
+int main() {
 
   const int x = 10;
   int & y = x;

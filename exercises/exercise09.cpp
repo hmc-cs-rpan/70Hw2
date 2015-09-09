@@ -1,20 +1,17 @@
 // -*- C++ -*-
 
 #include <iostream>
+#include <vector>
 
 using std::cout;
 using std::endl;
 
-int
-main() {
+int main() {
 
-  unsigned int x = 10;
+  const size_t dreamNumberOfCows = 10;
 
-  if (x = 5) {
-    cout << "x is 5!" << endl;
-  } else {
-    cout << "x is not 5!" << endl;
-  }
+  for (size_t i = 0; i < dreamNumberOfCows; ++i);
+    cout << "I want " << i << " cows." << endl;
 
   return 0;
 }

@@ -5,17 +5,11 @@
 using std::cout;
 using std::endl;
 
-int
-main() {
+int main() {
 
-  unsigned int x = 10;
+  unsigned int x;
 
-  printNumber(x);
+  cout << "x is " << x << endl;
 
   return 0;
-}
-
-void
-printNumber(const unsigned int y) {
-  cout << "the number is " << y << endl;
 }

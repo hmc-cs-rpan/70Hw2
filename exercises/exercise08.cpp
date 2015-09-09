@@ -5,17 +5,15 @@
 using std::cout;
 using std::endl;
 
-int
-main() {
+int main() {
 
-  unsigned int x;
-  bool b = true;
+  unsigned int x = 10;
 
-  if (b == true) {
-    x = 10;
+  if (x = 5) {
+    cout << "x is 5!" << endl;
+  } else {
+    cout << "x is not 5!" << endl;
   }
-
-  cout << "x is " << x << endl;
 
   return 0;
 }

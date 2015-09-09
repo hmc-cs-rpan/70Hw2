@@ -1,15 +1,13 @@
 // -*- C++ -*-
 
-void
-doSomething(int & y) {
-  y = 5;
-}
+#include <string>
 
-int
-main() {
+using std::string;
 
-  const int x = 10;
-  doSomething(x);
+int main() {
+
+  int x = 10;
+  string & y = x;
 
   return 0;
 }

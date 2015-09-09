@@ -7,13 +7,13 @@ using std::cout;
 using std::endl;
 using std::vector;
 
-int
-main() {
+int main() {
 
-  const vector<int> integers = {0, 1, 2, 3};
+  const size_t loopUpperLimit = 5;
 
-  for (size_t index = 0, index < integers.size(), ++index);
-    cout << "integers[" << index << "] is " << integers[index] << endl;
+  for (int index = 0; index < loopUpperLimit; ++index) {
+    cout << "index is " << index << endl;
+  }
 
   return 0;
 }

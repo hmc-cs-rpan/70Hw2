@@ -1,23 +1,29 @@
 // -*- C++ -*-
 
 #include <iostream>
+#include <vector>
 
 using std::cout;
 using std::endl;
+using std::vector;
 
-int
-main() {
+bool searchVectorForKey(const vector<double> & vec, const double key) {
+  for (size_t i = 0; i < vec.size(); ++i) {
+    if (vec[i] == key) {
+      return true;
+    }
+  }
+}
 
-  const unsigned int x = 10;
+int main() {
 
-  /* This was my first try; it's not working. */
-  /*
-  short y = 42 / x + 3;
+  const vector<double> doubles = {1.1, 2.2, 3.3};
 
-  size_t modifiedX = 42 / x;
+  const bool doublesHasZero = searchVectorForKey(doubles, 0.);
 
-  /* This is my second try; it seems to be working */
-  size_t y = modifiedX + 3;
+  if (doublesHasZero == true) {
+    cout << "doubles had zero!" << endl;
+  }
 
   return 0;
 }

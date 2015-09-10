@@ -3,6 +3,7 @@
 # Overview
 In this assignment, you'll work (or fight?) with the C++ compiler, as you dive into compiler and linker errors. You'll practice some of the memory models we saw in class. You'll also get the chance to modify existing C++ code and to write some C++ code from scratch.
 
+
 # Reading
 You should read the following sections of the *C++ Primer, 5th edition*, before you begin. 
 * Section 2.1 about primitive data types
@@ -11,12 +12,18 @@ You should read the following sections of the *C++ Primer, 5th edition*, before 
 * Section 6.2, stopping after you finish 6.2.3 about argument passing
 
 # Steps
-There are four Issues to complete for this assignment:
+There are nine Issues to complete for this assignment:
 
 * Compiler Errors Part
 * Linker Errors Part
 * Memory Diagram Part
 * Coding Part
+ * C1: Compile the Shuffle Program
+ * C2: Remove count_ from the LineShuffler class
+ * C3: Write the exchange function
+ * C4: Add a new member function to the LineShuffler class
+ * C5: Make removeLine Deterministic
+ * C6: Update shuffle
 
 # Grading
 Your submission will be graded as follows: 
@@ -32,8 +39,8 @@ See the [Grading Guidelines](https://github.com/hmc-cs70-fall2015/Admin/wiki/Gra
 The grutors will also provide written comments on your code's style and elegance.
 
 # Resources 
-* See the *[GitHub How To](https://github.com/hmc-cs70-fall2015/Homework-2/wiki/Setting-Up-Your-Repository) wiki page* for details on how to set up this assignment. 
-* See the updated wiki page on [Compiling C++ Code](ttps://github.com/hmc-cs70-fall2015/Admin/wiki/CompilingHowTo) for even more information about compiling code, including a section on separate compilation. 
+* See the *[GitHub How To](https://github.com/hmc-cs70-fall2015/Admin/wiki/Setting-Up-Your-Repository) wiki page* for details on how to set up this assignment. 
+* See the updated wiki page on [Compiling C++ Code](https://github.com/hmc-cs70-fall2015/Admin/wiki/CompilingHowTo) for even more information about compiling code, including a section on separate compilation. 
 * Help each other out! If you have resources or tips for other teams, add them to the [Hints and Tips](https://github.com/hmc-cs70-fall2015/Admin/wiki/Homework-2-Hints-and-Tips) page for this assignment. 
 
 # Helpful Hints

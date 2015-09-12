@@ -12,7 +12,7 @@
 using namespace std;
 
 LineShuffler::LineShuffler()
-    : count_(0)
+   // : count_(0)
 {
     // Nothing else to do.
 }
@@ -21,12 +21,12 @@ LineShuffler::LineShuffler()
 string LineShuffler::removeLine()
 {
     // Choose a random line.
-    int index = rnd_.next(count_);
+    int index = rnd_.next(lines_.size());
     string line = lines_[index];
 
     // Delete the string at lines_[index] and move the other strings up.
     lines_.erase(lines_.begin() + index);
-    --count_;
+    //--count_;
 
     return line;
 }
@@ -35,13 +35,13 @@ string LineShuffler::removeLine()
 void LineShuffler::addLine(string line)
 {
     lines_.push_back(line);
-    ++count_;
+    //++count_;
 }
 
 
 bool LineShuffler::isEmpty() const
 {
-    return count_ == 0;
+    return lines_.size() == 0;
 }
 
 

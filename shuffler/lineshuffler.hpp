@@ -85,7 +85,7 @@ private:
     // PRIVATE DATA
     // ************
 
-    int    count_;                      ///< Number of lines stored.
+//    int    count_;                      ///< Number of lines stored.
     Random rnd_;                        ///< State of random number generator.
     std::vector<std::string> lines_;    ///< Collection (vector) of lines.
 };

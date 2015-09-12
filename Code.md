@@ -14,8 +14,11 @@ To run:
 
 ## Questions from Issue C2
 ### Command(s) to re-build the `shuffle` program:
-```
-(Replace this with your command or commands)
+``
+clang++ -c std=c++11 -pedantic -Wall -Wextra shuffle.cpp
+clang++ -c std=c++11 -pedantic -Wall -Wextra lineshuffler.cpp
+clang++ -o shuffler shuffle.o lineshuffler.o random.o
+
 ```
 
 ## Questions from Issue C5

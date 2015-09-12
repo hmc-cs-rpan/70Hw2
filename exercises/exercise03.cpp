@@ -7,7 +7,7 @@ using std::string;
 int main() {
 
   int x = 10;
-  string & y = x;
+  int & y = x;
 
   return 0;
 }

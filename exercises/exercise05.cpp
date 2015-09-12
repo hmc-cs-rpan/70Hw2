@@ -5,7 +5,10 @@
 using std::cout;
 using std::endl;
 
-void sayHello();
+void sayHello()
+{
+   cout << "Hello world!" << endl;
+}
 
 int main() {
 

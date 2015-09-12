@@ -7,7 +7,7 @@ using std::endl;
 
 int main() {
 
-  unsigned int x;
+  unsigned int x=0;
 
   cout << "x is " << x << endl;
 

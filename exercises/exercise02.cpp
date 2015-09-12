@@ -3,7 +3,7 @@
 int main() {
 
   const int x = 10;
-  int & y = x;
+  const int & y = x;
 
   return 0;
 }

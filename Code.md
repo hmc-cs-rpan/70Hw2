@@ -2,7 +2,14 @@
 
 ### Command to build the `shuffle` program:
 ```
-(Replace this with your command)
+clang++ -c -std=c++11 -pedantic -Wall -Wextra shuffle.cpp
+clang++ -c -std=c++11 -pedantic -Wall -Wextra lineshuffler.cpp
+clang++ -c -std=c++11 -pedantic -Wall -Wextra random.cpp
+
+clang++ -o shuffler shuffle.o lineshuffler.o random.o
+
+To run:
+./shuffler
 ```
 
 ## Questions from Issue C2

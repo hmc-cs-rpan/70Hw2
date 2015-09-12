@@ -13,6 +13,7 @@ bool searchVectorForKey(const vector<double> & vec, const double key) {
       return true;
     }
   }
+  return false;
 }
 
 int main() {

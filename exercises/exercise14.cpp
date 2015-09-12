@@ -6,7 +6,7 @@ using std::cout;
 using std::endl;
 
 double addTwoNumbers(const double x, const double y) {
-  return x + x;
+  return x + y;
 }
 
 int main() {
@@ -16,5 +16,5 @@ int main() {
 
   const double z = addTwoNumbers(x, y);
 
-  return 0;
+  return z;
 }

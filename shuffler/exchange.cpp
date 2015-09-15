@@ -24,12 +24,12 @@ void exchange(string& s1, string& s2)
 	s2 = holder;               // Sets s2 to the original value of s1
 }
 
-int main() 
-{
-    string s1 = "second";
-    string s2 = "first";
-    exchange(s1, s2);
-    cout << s1 << endl;
-    cout << s2 << endl;
-    return 0; 
-}
+// int main() 
+// {
+//     string s1 = "second";
+//     string s2 = "first";
+//     exchange(s1, s2);
+//     cout << s1 << endl;
+//     cout << s2 << endl;
+//     return 0; 
+// }

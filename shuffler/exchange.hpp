@@ -42,6 +42,11 @@ public:
 
      void exchange(string& s1, string& s2);
 
+// private:
+
+//     Exchange(const Exchange&);
+//     Exchange& operator=(const Exchange& rhs);
+
 };
 
 #endif // EXCHANGE_HPP_INCLUDED

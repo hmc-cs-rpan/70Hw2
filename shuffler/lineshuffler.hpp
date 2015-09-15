@@ -80,6 +80,8 @@ public:
      */
     void shuffle();
 
+ //   void exchange(string& s1, string& s2);
+
 private:
 
     // *********************

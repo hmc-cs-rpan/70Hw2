@@ -41,6 +41,7 @@ int main (int, const char* [])
         randomLines.addLine(line);
     }
 
+    randomLines.shuffle();
     // Show the shuffled lines.
     cout << "Here are the shuffled lines:" << endl;
 

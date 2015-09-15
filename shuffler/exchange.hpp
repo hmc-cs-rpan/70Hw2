@@ -1,19 +1,19 @@
 /**
- * \file swap.hpp
+ * \file exchange.hpp
  * \Daniel Zhang, Ricky Pan	
  *
- * \brief Interface definition for swap.
+ * \brief Interface definition for exchange.
  */
 
-#ifndef SWAP_HPP_INCLUDED
-#define SWAP_HPP_INCLUDED 1
+#ifndef EXCHANGE_HPP_INCLUDED
+#define EXCHANGE_HPP_INCLUDED 1
 
 #include <vector>
 #include <string>
 
 using namespace std;
 
-class Swap{
+class Exchange{
 public:
 
 	// ************
@@ -26,9 +26,7 @@ public:
      * \pre None.
      * \post The object will contain no strings.
      */
-     Swap();
-     string s1_;
-     string s2_;
+     Exchange();
     // ****************
     // MEMBER FUNCTIONS
     // ****************
@@ -42,8 +40,9 @@ public:
      * \post The values of the strings should have swapped
      */
 
-     void exchange();
+     void swap(string& s1, string& s2);
 
+     void tomato();
 };
 
-#endif // LINESHUFFLER_HPP_INCLUDED
+#endif // EXCHANGE_HPP_INCLUDED

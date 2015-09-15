@@ -12,7 +12,7 @@
 using namespace std;
 
 LineShuffler::LineShuffler()
-   // : count_(0)
+   // : count_(0)           // removed count from constructor
 {
     // Nothing else to do.
 }

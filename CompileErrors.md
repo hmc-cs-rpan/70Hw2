@@ -49,26 +49,27 @@
 * We changed the commas to semicolons so that the for loop had the right syntax.
 
 ## Exercise 11
-* **Search Term:**
-* **URL with Solution:** 
-* **How to fix:**
+* comparison of integers of different signs: 'int'
+      and 'const size_t' (aka 'const unsigned long')
+* http://stackoverflow.com/questions/8350971/comparison-of-integers-of-different-signs-warning-with-xcode 
+* changed the type of i from int to size_t so that they would be of the same type.
 
 ## Exercise 12
-* **Search Term:**
-* **URL with Solution:** 
-* **How to fix:**
+* use of undeclared identifier
+* http://stackoverflow.com/questions/22197030/what-is-an-undeclared-identifier-error-and-how-do-i-fix-it
+* Added brackets to include both lines of the for loop so that i would be defined by that line of the code.
 
 ## Exercise 13
-* **Search Term:**
-* **URL with Solution:** 
-* **How to fix:**
+* invalid operands to binary expression
+* http://cs50.stackexchange.com/questions/7332/why-do-i-get-the-invalid-operands-to-binary-expression-error
+* changed 'c' from a char to a string by adding double quotes "c"
 
 ## Exercise 14
-* **Search Term:**
-* **URL with Solution:** 
-* **How to fix:**
+* warning: unused parameter 'y'
+* http://stackoverflow.com/questions/3599160/unused-parameter-warnings-in-c-code
+* changed addTwoNumbers to return x+y so that it used both variables.  Changed main() to return z so that all the variables were used.
 
 ## Exercise 15
-* **Search Term:**
-* **URL with Solution:** 
-* **How to fix:**
+* control may reach end of non-void function
+* http://stackoverflow.com/questions/19104216/error-control-may-reach-end-of-non-void-function
+* added the statement "return false" after the loop so that it is guaranteed to return a value.

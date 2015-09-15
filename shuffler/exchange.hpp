@@ -35,7 +35,7 @@ public:
      * \brief
      *     Interchange the values of two strings.
      *
-     * \pre Object should have two strings
+     * \pre Takes two string arguments
      * \returns None
      * \post The values of the strings should have swapped
      */

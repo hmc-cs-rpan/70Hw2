@@ -1,6 +1,6 @@
 /**
  * \file random.hpp
- * \author CS 70 Provided Code
+ * \Daniel Zhang, Ricky Pan CS 70 Provided Code
  * \brief Interface definition for Random Class.
  */
 

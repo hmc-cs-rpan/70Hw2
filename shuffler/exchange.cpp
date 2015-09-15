@@ -24,6 +24,8 @@ void exchange(string& s1, string& s2)
 	s2 = holder;               // Sets s2 to the original value of s1
 }
 
+// we commented this main call out because shuffle called main
+
 // int main() 
 // {
 //     string s1 = "second";

@@ -1,6 +1,6 @@
 /**
  * \file lineshuffler.cpp
- * \author CS 70 Provided Code
+ * \Daniel Zhang, Ricky Pan CS 70 Provided Code
  *
  * \brief
  *   Implements LineShuffler. See lineshuffler.hpp for function
@@ -12,7 +12,6 @@
 using namespace std;
 
 LineShuffler::LineShuffler()
-   // : count_(0)           // removed count from constructor
 {
     // Nothing else to do.
 }
@@ -20,22 +19,18 @@ LineShuffler::LineShuffler()
 
 string LineShuffler::removeLine()
 {
-    // Choose a random line.
-//    int index = rnd_.next(lines_.size());
-    string line = lines_[0];
+    string firstLine = lines_[0];
 
-    // Delete the string at lines_[index] and move the other strings up.
+    // Delete the first string and move the other strings up.
     lines_.erase(lines_.begin());
-    //--count_;
 
-    return line;
+    return firstLine;
 }
 
 
 void LineShuffler::addLine(string line)
 {
     lines_.push_back(line);
-    //++count_;
 }
 
 
@@ -55,11 +50,12 @@ void LineShuffler::shuffle()
 {
     int size = lines_.size();
 
-    for(int i=0; i < size; i++){
-
+    for(int i=0; i < size; i++){        // chooses ith line and a random
+                                        // line and exchanges the two
         string& currentLine = lines_[i];
 
-        int randomRow = rnd_.next(size);
+        int randomRow = rnd_.next(size);    // chooses a random number
+                                            // between 0 and size-1
         string& randomLine = lines_[randomRow];
 
         exc_.exchange(currentLine, randomLine);

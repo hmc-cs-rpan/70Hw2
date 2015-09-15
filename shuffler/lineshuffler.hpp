@@ -1,6 +1,6 @@
 /**
  * \file lineshuffler.hpp
- * \author CS 70 Provided Code
+ * \Daniel Zhang, Ricky Pan CS 70 Provided Code
  *
  * \brief Interface definition for LineShuffler.
  */
@@ -23,8 +23,8 @@
  * \brief Takes in lines, then outputs them in a random order.
  * \details
  *   Uses the incredibly simple algorithm of: starts empty. Then call
- *   addLine many times until all lines are added. Then until isEmpty,
- *   call removeLine.
+ *   addLine many times until all lines are added. We then shuffle the
+ *   lines. Then until isEmpty, call removeLine.
  * \remarks
  *   Randomness depends on the Random class.
  */
@@ -49,10 +49,10 @@ public:
 
     /**
      * \brief
-     *    Removes and returns a random line stored in the LineShuffler.
+     *    Removes and returns the first line stored in the LineShuffler.
      *
      * \pre Object should be non-empty (isEmpty() == false)
-     * \returns A random string from the object.
+     * \returns The first string from the object.
      * \post Removes the selected string from the object.
      */
     std::string removeLine();
@@ -74,13 +74,12 @@ public:
     bool isEmpty() const;
 
     /**
-     * \brief Swap later
-     *
+     * \brief Changes the ordering of the lines by exchanging
+     *  random pairs of lines
      * \returns none
      */
     void shuffle();
 
- //   void exchange(string& s1, string& s2);
 
 private:
 
@@ -95,11 +94,11 @@ private:
     // PRIVATE DATA
     // ************
 
-//    int    count_;                      ///< Number of lines stored.
     Random rnd_;                        ///< State of random number generator.
     std::vector<std::string> lines_;    ///< Collection (vector) of lines.
 
-    Exchange exc_;
+    Exchange exc_;                      // Allows us to use the exchange
+                                        // function
 };
 
 #endif // LINESHUFFLER_HPP_INCLUDED

@@ -14,6 +14,7 @@
 #include <string>
 
 #include "random.hpp"
+#include "exchange.hpp"
 
 
 
@@ -72,6 +73,13 @@ public:
      */
     bool isEmpty() const;
 
+    /**
+     * \brief Swap later
+     *
+     * \returns none
+     */
+    void shuffle();
+
 private:
 
     // *********************
@@ -88,6 +96,8 @@ private:
 //    int    count_;                      ///< Number of lines stored.
     Random rnd_;                        ///< State of random number generator.
     std::vector<std::string> lines_;    ///< Collection (vector) of lines.
+
+    Exchange exc_;
 };
 
 #endif // LINESHUFFLER_HPP_INCLUDED

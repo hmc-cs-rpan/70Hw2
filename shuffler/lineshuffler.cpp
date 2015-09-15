@@ -44,6 +44,22 @@ bool LineShuffler::isEmpty() const
     return lines_.size() == 0;
 }
 
+void LineShuffler::shuffle()
+{
+    int size = lines_.size();
+
+    for(int i=0; i < size; i++){
+
+        string currentLine = lines_[i];
+
+        int randomRow = rnd_.next(size);
+        string randomLine = lines_[randomRow];
+
+        exc_.exchange(currentLine, randomLine);
+
+    }
+}
+
 
 /* (Junk to make emacs use a specific indentation style)
  * Local Variables:

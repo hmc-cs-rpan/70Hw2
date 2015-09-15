@@ -40,9 +40,8 @@ public:
      * \post The values of the strings should have swapped
      */
 
-     void swap(string& s1, string& s2);
+     void exchange(string& s1, string& s2);
 
-     void tomato();
 };
 
 #endif // EXCHANGE_HPP_INCLUDED

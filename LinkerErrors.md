@@ -10,11 +10,11 @@ linking it to the other files.
 The second linker error we got was:
 ```
 lineshuffler.o: In function `LineShuffler::LineShuffler()':
-lineshuffler.cpp:(.text+0x11): undefined reference to `Random::Random()'
-lineshuffler.cpp:(.text+0x2f): undefined reference to `Exchange::Exchange()'
+lineshuffler.cpp:(.text+0x15): undefined reference to `Random::Random()'
 lineshuffler.o: In function `LineShuffler::shuffle()':
-lineshuffler.cpp:(.text+0x26f): undefined reference to `Random::next(
-x86_64-pc-linux-gnu-clang-3.5.0: error: linker command failed with exit code 1 (use -v to see invocation)unsigned int)'
+lineshuffler.cpp:(.text+0x1bf): undefined reference to `Random::next(unsigned int)'
+lineshuffler.cpp:(.text+0x1e7): undefined reference to `exchange(std::string&, std::string&)'
+x86_64-pc-linux-gnu-clang-3.5.0: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
 
 ## Modified command

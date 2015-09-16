@@ -2,7 +2,6 @@
  * \file exchange.hpp
  * \Daniel Zhang, Ricky Pan	
  *
- * \brief Interface definition for exchange.
  */
 
 #ifndef EXCHANGE_HPP_INCLUDED
@@ -12,24 +11,6 @@
 #include <string>
 
 using namespace std;
-
-class Exchange{
-public:
-
-	// ************
-    // CONSTRUCTORS
-    // ************
-
-    /**
-     * \brief Initializes the object to empty
-     *
-     * \pre None.
-     * \post The object will contain no strings.
-     */
-     Exchange();
-    // ****************
-    // MEMBER FUNCTIONS
-    // ****************
 
      /**
      * \brief
@@ -41,12 +22,5 @@ public:
      */
 
      void exchange(string& s1, string& s2);
-
-// private:
-
-//     Exchange(const Exchange&);
-//     Exchange& operator=(const Exchange& rhs);
-
-};
 
 #endif // EXCHANGE_HPP_INCLUDED

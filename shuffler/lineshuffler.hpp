@@ -14,7 +14,6 @@
 #include <string>
 
 #include "random.hpp"
-#include "exchange.hpp"
 
 
 
@@ -52,8 +51,8 @@ public:
      *    Removes and returns the first line stored in the LineShuffler.
      *
      * \pre Object should be non-empty (isEmpty() == false)
-     * \returns The first string from the object.
-     * \post Removes the selected string from the object.
+     * \returns The first string of the object.
+     * \post Removes the first string from the object.
      */
     std::string removeLine();
 
@@ -96,9 +95,6 @@ private:
 
     Random rnd_;                        ///< State of random number generator.
     std::vector<std::string> lines_;    ///< Collection (vector) of lines.
-
-    Exchange exc_;                      // Allows us to use the exchange
-                                        // function
 };
 
 #endif // LINESHUFFLER_HPP_INCLUDED

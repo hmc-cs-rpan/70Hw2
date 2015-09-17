@@ -1,6 +1,6 @@
 /**
  * \file exchange.hpp
- * \Daniel Zhang, Ricky Pan	
+ * \Daniel Zhang, Ricky Pan 
  *
  */
 
@@ -9,8 +9,6 @@
 
 #include <vector>
 #include <string>
-
-using namespace std;
 
      /**
      * \brief
@@ -21,6 +19,6 @@ using namespace std;
      * \post The values of the strings should have swapped
      */
 
-     void exchange(string& s1, string& s2);
+     void exchange(std::string& s1, std::string& s2);
 
 #endif // EXCHANGE_HPP_INCLUDED

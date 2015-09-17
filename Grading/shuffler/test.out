@@ -1,0 +1,5 @@
+Test 1: OK    		(test LineShuffler without shuffling)
+			Command: ./test_shuffler 
+
+Test 2: OK    		(test swap function)
+			Command: ./test_exchange 
